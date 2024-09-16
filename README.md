@@ -19,15 +19,11 @@ Node.js and npm installed
 MongoDB installed and running
 Git installed
 Clone the repository
-bash
-Copiar código
 git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
 Install dependencies
 Navigate to both the frontend and backend directories to install dependencies:
 
-bash
-Copiar código
 # Install backend dependencies
 cd backend
 npm install
@@ -38,16 +34,12 @@ npm install
 Set up environment variables
 Create a .env file in the backend directory with the following content:
 
-bash
-Copiar código
 MONGO_URI=your_mongodb_connection_string
 PORT=8000
 JWT_SECRET=your_jwt_secret
 Run the application
 To start the application, run the following commands:
 
-bash
-Copiar código
 # Run the backend server
 cd backend
 npm run dev
@@ -66,18 +58,18 @@ Image Routes
 POST /api/upload: Upload an image for the logged-in user.
 GET /api/user-images/:userId: Get all images for the logged-in user.
 Example Requests
+
 Register User
-bash
-Copiar código
+
 POST /api/register
 {
   "name": "John Doe",
   "email": "johndoe@example.com",
   "password": "password123"
 }
+
 Upload Image
-bash
-Copiar código
+
 POST /api/upload
 Form Data:
 - image: [image file]
